@@ -493,6 +493,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af3c729a2e6b64eb7a88598a3bb9e7cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1715817365 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 212615243111804501, guid: 617be5291beeb48ec98b39b577960afc, type: 3}
+  m_PrefabInstance: {fileID: 2082546117047093844}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2082546117047093844
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -517,6 +528,14 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 981540771589145969, guid: 617be5291beeb48ec98b39b577960afc, type: 3}
+      propertyPath: BoxHeaderTitle
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1056339599667068847, guid: 617be5291beeb48ec98b39b577960afc, type: 3}
+      propertyPath: Title
+      value: 
+      objectReference: {fileID: 1715817365}
     - target: {fileID: 1056339599667068847, guid: 617be5291beeb48ec98b39b577960afc, type: 3}
       propertyPath: title
       value: 
@@ -524,11 +543,19 @@ PrefabInstance:
     - target: {fileID: 1056339599667068847, guid: 617be5291beeb48ec98b39b577960afc, type: 3}
       propertyPath: BoxHeaderTitle
       value: 
-      objectReference: {fileID: 1715817363}
+      objectReference: {fileID: 0}
     - target: {fileID: 1110233926989762964, guid: 617be5291beeb48ec98b39b577960afc, type: 3}
       propertyPath: title
       value: Sophie's Diary
       objectReference: {fileID: 0}
+    - target: {fileID: 1110233926989762964, guid: 617be5291beeb48ec98b39b577960afc, type: 3}
+      propertyPath: content
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110233926989762964, guid: 617be5291beeb48ec98b39b577960afc, type: 3}
+      propertyPath: BoxHeaderTitle
+      value: 
+      objectReference: {fileID: 1715817363}
     - target: {fileID: 1217692750253394985, guid: 617be5291beeb48ec98b39b577960afc, type: 3}
       propertyPath: m_SizeDelta.x
       value: -60
@@ -648,6 +675,10 @@ PrefabInstance:
     - target: {fileID: 4625006021718446864, guid: 617be5291beeb48ec98b39b577960afc, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8259098263599420006, guid: 617be5291beeb48ec98b39b577960afc, type: 3}
+      propertyPath: BoxHeaderTitle
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

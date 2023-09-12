@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9dcbc7faaee143f284b5603a199f37d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BoxHeaderTitle: {fileID: 0}
+  BoxHeaderTitle: {fileID: 1056339599667068847}
   title: 
   content: 
   BackGroundColor: {r: 1, g: 0, b: 0, a: 0}
@@ -491,6 +491,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af3c729a2e6b64eb7a88598a3bb9e7cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BoxHeaderTitle: {fileID: 1056339599667068847}
+  title: 
+  content: 
+  BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  HBackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   Title: {fileID: 0}
 --- !u!1 &7765991001369747114
 GameObject:
@@ -581,3 +586,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54f8b937c70d749648e24c0e9c36dbd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BoxHeaderTitle: {fileID: 1056339599667068847}
+  title: 
+  content: 
+  BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  HBackGroundColor: {r: 0, g: 0, b: 0, a: 0}

@@ -11,7 +11,7 @@ public class UI_box_Header : UI_box_BG
     void Start()
     {
         HBackGround = GetComponent<Sprite>();
-        HBackGroundColor = GetComponent<SpriteRenderer>().color;
+        //HBackGroundColor = GetComponent<SpriteRenderer>().color;
     }
 
     // Update is called once per frame

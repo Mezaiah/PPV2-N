@@ -10,7 +10,7 @@ public class UI_box_BG : UI_box
     void Start()
     {
         BackGround = GetComponent<Sprite>();
-        BackGroundColor = GetComponent<SpriteRenderer>().color;
+        //BackGroundColor = GetComponent<SpriteRenderer>().color;
     }
 
     // Update is called once per frame
