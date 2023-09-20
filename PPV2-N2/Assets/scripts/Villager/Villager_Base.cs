@@ -6,14 +6,14 @@ public enum VillagerType
 {
     Normal = 0,
     Pescador = 1,
-        Herrero = 2
+    Herrero = 2
 }
 public class Villager_Base : MonoBehaviour
 {
     public string Name = "Villager";
     public int Health = 100;
     public VillagerType Type;
-    public List<Item> Invertory; 
+    public List<Item> Inventory; 
     public List<Item> tradeItems;
     public Sprite skin;
     public Item SelectedItem;
@@ -41,12 +41,12 @@ public class Villager_Base : MonoBehaviour
     }
     public virtual void CreateInventory()
     {
-        Invertory = new List<Item>();
+        Inventory = new List<Item>();
     }
 
     public virtual void AddToInventory(Item _Item)
     {
-        Invertory.Add(_Item);
+        Inventory.Add(_Item);
     }
     public virtual string GetName()
     {
@@ -67,11 +67,12 @@ public class Villager_Base : MonoBehaviour
 
     public virtual Item GetSelectedItem()
     {
+        Debug.Log(SelectedItem);
         return SelectedItem;
     }
-    public virtual Item GetnventoryItem(int _index)
+    public virtual Item GetInventoryItem(int _index)
     {
-        return Invertory[_index];
+        return Inventory[_index];
     }
     public virtual void CreateItemsToTrade()
     {

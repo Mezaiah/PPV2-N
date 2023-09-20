@@ -4,32 +4,38 @@ using UnityEngine;
 
 public class Villager_Pescador : Villager_Base
 {
-    Item pescado;
-    public override void SetHealth(int _Health)
+    Item pala, pescado, carnePodrida;
+    public List<Item> GetInventoryItems()
     {
-        Health = 100;
+        return Inventory;
     }
 
-    public override void SetType(VillagerType _Type)
-    {
-        Type = VillagerType.Pescador;
-    }
-    public override void SetSkin(Sprite _Skin)
-    {
-        skin = _Skin;
-    }
 
-    
-    public override void CreateInventory()
-    {
-        Invertory = new List<Item>();
-    }
     void Start()
     {
-        SetName("Paulo");
-        SetSelectedItem(pescado);
-
+        //crear inventario y añadir cosas, según mi idea
+        CreateInventory();
+        AddToInventory(pescado);
+        AddToInventory(carnePodrida);
+        CreateItemsToTrade();
+        getTradeItems();
         
+        //se añadió inventario 
+        SetName("Paulo");
+        SetHealth(50);
+        SetType(VillagerType.Pescador);
+        SetSkin(skin);
+        SetSelectedItem(pala);
+        
+        GetName();
+        GetHealth();
+        GetType();
+        GetSkin();
+        GetSelectedItem();
+        List<Item> inventoryItems = GetInventoryItems();
+        getTradeItems();
+
+
     }
 
     // Update is called once per frame
