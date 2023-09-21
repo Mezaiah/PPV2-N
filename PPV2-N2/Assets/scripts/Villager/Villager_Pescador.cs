@@ -14,28 +14,24 @@ public class Villager_Pescador : Villager_Base
     void Start()
     {
         //crear inventario y añadir cosas, según mi idea
-        CreateInventory();
-        AddToInventory(pescado);
-        AddToInventory(carnePodrida);
-        CreateItemsToTrade();
-        getTradeItems();
-        
         //se añadió inventario 
         SetName("Paulo");
         SetHealth(50);
         SetType(VillagerType.Pescador);
-        SetSkin(skin);
-        SetSelectedItem(pala);
         
+        
+        
+        CreateInventory();
+        Item rawMeet = new Item("raw Meat");
+        AddToInventory(rawMeet);
+        Debug.Log("item name: " + Inventory[0].Name);
+       
         GetName();
         GetHealth();
         GetType();
-        GetSkin();
-        GetSelectedItem();
-        List<Item> inventoryItems = GetInventoryItems();
-        getTradeItems();
-
-
+    
+        
+   
     }
 
     // Update is called once per frame
