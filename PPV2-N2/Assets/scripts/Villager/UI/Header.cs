@@ -5,7 +5,8 @@ using TMPro;
 
 public class Header : Villager_Pescador
 {
-    public TMP_Text Nombre;
+    public TMP_Text Tipo;
+    
     // Start is called before the first frame update
 
     public Villager_Pescador tipo;
@@ -13,8 +14,14 @@ public class Header : Villager_Pescador
     
     void Start()
     {
-        tipo.GetType();
-        Debug.Log(GetType());
+
+
+        
+       
+        tipo.SetType(VillagerType.Pescador);
+
+        Debug.Log(VillagerType.Pescador);
+        Tipo.text = VillagerType.Pescador.ToString();
         //Nombre = 
     }
 

@@ -67,7 +67,6 @@ public class Villager_Base : MonoBehaviour
 
     public virtual Item GetSelectedItem()
     {
-        Debug.Log(SelectedItem);
         return SelectedItem;
     }
     public virtual Item GetInventoryItem(int _index)

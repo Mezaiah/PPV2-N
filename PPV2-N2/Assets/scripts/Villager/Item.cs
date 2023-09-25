@@ -16,19 +16,19 @@ public class Item : MonoBehaviour
     public Effect Effect;
     public Item()
     {
-
+        Name = "";
     }
 
-    public Item(string _Name)
-    {
-        Name = _Name;
-        Effect = Effect.None;
-    }
+    //public Item(string _Name)
+    //{
+    //    Name = _Name;
+       
+    //}
 
 
     void Start()
     {
-        name = "Item";
+        
     }
 
     // Update is called once per frame
