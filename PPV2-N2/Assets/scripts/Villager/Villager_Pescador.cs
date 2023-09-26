@@ -10,12 +10,7 @@ public class Villager_Pescador : Villager_Base
     {
         return Inventory;
     }
-    public override void SetHealth(int _Health)
-    {
-        Health = 650;
-        base.SetHealth(Health);
-        
-    }
+    
 
     void Start()
     {
@@ -23,7 +18,8 @@ public class Villager_Pescador : Villager_Base
         //se añadió inventario 
         //SetName("Paulo");
         SetType(VillagerType.Pescador);
-        SetHealth(Health);
+        SetName("Paulo");
+        SetHealth(360);
         //CreateInventory();
         //Item rawMeet = new Item("raw Meat");
         //AddToInventory(rawMeat);
@@ -38,8 +34,6 @@ public class Villager_Pescador : Villager_Base
     }
     public void GetData()
     {
-        SetName("Paulo");
-        SetHealth(Health);
         //SetSelectedItem(pala);
     }
 
