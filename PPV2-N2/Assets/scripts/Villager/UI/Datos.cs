@@ -5,6 +5,7 @@ using TMPro;
 
 public class Datos : MonoBehaviour
 {
+    
     public TextMeshProUGUI NNombre;
     public TextMeshProUGUI NHealth;
     public TextMeshProUGUI NItem;
@@ -14,8 +15,9 @@ public class Datos : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         //nombre_i.Name = "Pala";
-        datosP = new Villager_Pescador();
+        
         NNombre.text = datosP.GetName();
         NHealth.text = datosP.GetHealth().ToString();
         //Debug.Log(nombre_i.Name);

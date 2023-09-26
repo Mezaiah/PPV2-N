@@ -11,15 +11,16 @@ public class Villager_Pescador : Villager_Base
         return Inventory;
     }
     
+    public Villager_Pescador()
+    {
 
+    }
     void Start()
     {
-        //crear inventario y añadir cosas, según mi idea
-        //se añadió inventario 
+       
+        //SetType(VillagerType.Pescador);
         //SetName("Paulo");
-        SetType(VillagerType.Pescador);
-        SetName("Paulo");
-        SetHealth(360);
+        //SetHealth(360);
         //CreateInventory();
         //Item rawMeet = new Item("raw Meat");
         //AddToInventory(rawMeat);
