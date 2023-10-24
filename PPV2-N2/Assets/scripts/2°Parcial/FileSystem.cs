@@ -3,14 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using UnityEngine.Rendering;
+using System.Runtime.Serialization.Formatters.Binary;
 
 public class FileSystem : MonoBehaviour
 {
+    public static FileSystem instance;
     public GameObject obj;
     public GameObject obj2;
     string positionS;
     bool IsSaving = false;
     public Player_data p;
+
+    private void Awake()
+    {
+        if(instance != null)
+        {
+            return;
+        }
+        else
+        {
+            instance = this;
+        }
+    }
     void CreateFile(string _FileName, string _extension, string _data)
     {
         //1) path
@@ -117,10 +131,42 @@ public class FileSystem : MonoBehaviour
         }
         return data;
     }
+
+    
+    T LoadFromJSON<T>(string _fileName) where T : new()
+    {
+        T data = new T();
+        string JSonData = ReadFile(_fileName, ".json");
+        if(JSonData.Length != 0)
+        {
+            Debug.Log("data: " + JSonData);
+            JsonUtility.FromJsonOverwrite(JSonData, data);
+        }
+        else
+        {
+            Debug.Log("tas ReWey");
+        }
+        return data;
+    }
     // Start is called before the first frame update
+    
+    public void SaveToBinary(string _FIleName, object _data)
+    {
+        //creamos un formateador de binarios
+        BinaryFormatter bf = new BinaryFormatter();
+        //obtener el path para guardar y asignar el archivo binary
+        string path = Application.dataPath + "/Resources/" + _FIleName + ".file";
+        //crear un archvio
+        FileStream stream = new FileStream(path, FileMode.Create);
+        //serializar la info y guardar
+        bf.Serialize(stream, _data);
+        //cerrar archivo
+        stream.Close();
+        
+    }
     void Start()
     {
-
+        SaveToBinary("samuel", p);
          //= new Player_data("Sam", "Penudo", 565656);
         p = (Player_data)LoadFromJSON("Sam");
         //SaveToJSON(p.Name, p);
