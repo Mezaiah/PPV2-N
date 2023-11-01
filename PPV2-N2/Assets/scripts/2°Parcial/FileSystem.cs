@@ -4,6 +4,8 @@ using UnityEngine;
 using System.IO;
 using UnityEngine.Rendering;
 using System.Runtime.Serialization.Formatters.Binary;
+using SimpleJSON;
+using TMPro;
 
 public class FileSystem : MonoBehaviour
 {
