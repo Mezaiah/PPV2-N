@@ -88,6 +88,7 @@ public class Controller : MonoBehaviour
         if (collision.CompareTag("PowerUp"))
         {
              Power = true;
+            Debug.Log("ya puedes");
         }
     }
 
